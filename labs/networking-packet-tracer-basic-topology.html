@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Networking Lab | Packet Tracer Basic Topology</title>
+  <title>Networking Lab: Basic Network Topology | Raphael Arakpogun</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
 
 <header>
@@ -14,7 +15,11 @@
 
   <nav>
     <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../skills.html">Skills</a>
+    <a href="../projects.html">Projects</a>
     <a href="../labs.html">Lab Log</a>
+    <a href="../contact.html">Contact</a>
   </nav>
 </header>
 
@@ -23,10 +28,11 @@
 <section>
   <h2>Lab Overview</h2>
   <p>
-    This lab demonstrates my ability to design and test a basic network topology
-    using Cisco Packet Tracer. The focus was on IP addressing, connectivity testing,
-    and understanding how devices communicate on a network.
+    This lab demonstrates my ability to design and test a basic routed network topology
+    using Cisco Packet Tracer. The focus of this lab was on IPv4 addressing, subnetting,
+    device connectivity, and verifying communication between local and remote networks.
   </p>
+
   <p><em>
     Note: This summary reflects my own learning and does not include assignment instructions
     or assessment materials.
@@ -34,67 +40,39 @@
 </section>
 
 <section>
+  <h2>Scenario</h2>
+  <ul>
+    <li><strong>Environment:</strong> Cisco Packet Tracer</li>
+    <li><strong>Goal:</strong> Build a multi-network topology and verify end-to-end connectivity.</li>
+    <li><strong>Constraints:</strong> Multiple IPv4 subnets, WAN /30 links, and remote services.</li>
+  </ul>
+</section>
+
+<section>
   <h2>What I Built</h2>
   <ul>
-    <li>A small network topology with end devices and networking devices</li>
-    <li>Logical connections between devices</li>
-    <li>IP addressing appropriate for the network design</li>
+    <li>Two local LANs connected through routers (RA and RB)</li>
+    <li>Point-to-point WAN link using a /30 subnet</li>
+    <li>Remote network containing DNS, TFTP, and Web servers</li>
+    <li>Proper IPv4 addressing based on subnet requirements</li>
   </ul>
 </section>
 
 <section>
   <h2>Skills Demonstrated</h2>
   <ul>
-    <li>Understanding of basic network components (routers, switches, end devices)</li>
-    <li>IPv4 addressing and subnet awareness</li>
-    <li>Connectivity verification using ping</li>
-    <li>Basic troubleshooting when connectivity failed</li>
+    <li>IPv4 addressing and subnetting</li>
+    <li>Understanding of routers, switches, and end devices</li>
+    <li>Basic routing concepts</li>
+    <li>Connectivity testing using ping</li>
+    <li>Basic troubleshooting methodology</li>
   </ul>
 </section>
 
 <section>
-  <h2>Evidence</h2>
-  <p>
-    Below is a screenshot of the network topology created in Cisco Packet Tracer.
-  </p>
-
-  <img src="../assets/images/packet-tracer/basic-topology.png"
-       alt="Cisco Packet Tracer basic network topology"
-       width="700">
-       <p><em>Figure 1: Cisco Packet Tracer topology showing multiple subnets and a remote services network.</em></p>
-
-</section>
-
-<section>
-  <h2>What I Learned</h2>
+  <h2>Testing and Verification</h2>
   <ul>
-    <li>How incorrect IP addressing impacts network communication</li>
-    <li>The importance of verifying each connection step-by-step</li>
-    <li>How to use ping results to isolate network issues</li>
-  </ul>
-</section>
-<section>
-  <h2>Troubleshooting Notes</h2>
-  <ul>
-    <li>Verified IP addresses and subnet masks when initial connectivity failed</li>
-    <li>Used ping tests to isolate where communication was breaking</li>
-    <li>Confirmed logical connections between devices</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Next Improvement</h2>
-  <p>
-    In a future iteration, I plan to extend this topology by introducing VLANs
-    and testing inter-network communication.
-  </p>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026 Raphael Arakpogun</p>
-</footer>
-
-</body>
-</html>
+    <li>Ping tests between devices on different subnets</li>
+    <li>Verification of correct IP address and subnet mask assignment</li>
+    <li>Checked physical and logical connections in Packet Tracer</li>
+    <li>Confirmed successful communication with re
