@@ -42,3 +42,55 @@ footer {
   color: #777;
   font-size: 0.9em;
 }
+/* --- Lab evidence image styling --- */
+.evidence-figure {
+  margin: 18px 0;
+}
+
+.evidence-figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: zoom-in;
+}
+
+.evidence-figure figcaption {
+  font-size: 0.95rem;
+  margin-top: 8px;
+  color: #444;
+}
+
+/* --- Simple lightbox --- */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  padding: 30px;
+  z-index: 9999;
+}
+
+.lightbox.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  max-width: 95vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.lightbox .hint {
+  position: fixed;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
