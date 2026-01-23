@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
 <header>
   <h1>Lab Title</h1>
   <p class="tagline">Tool(s) Used | Topic Area</p>
@@ -25,95 +26,100 @@
 <section>
   <h2>Lab Overview</h2>
   <p>
-    3–5 lines explaining what you built and why it matters (high level).
+    Brief, high-level explanation of what you built and why it matters.
+    Focus on concepts, not assignment instructions.
   </p>
   <p><em>
-    Note: This summary reflects my own learning and does not include assignment instructions or assessment materials.
+    Note: This summary reflects my own learning and does not include assignment instructions
+    or assessment materials.
   </em></p>
 </section>
 
 <section>
   <h2>Scenario</h2>
   <ul>
-    <li><strong>Environment:</strong> (Packet Tracer / Linux VM / Windows Server / etc.)</li>
-    <li><strong>Goal:</strong> (what success looked like)</li>
-    <li><strong>Constraints:</strong> (e.g., multiple subnets, limited devices, security requirements)</li>
+    <li><strong>Environment:</strong> Cisco Packet Tracer / Linux VM / Windows Server</li>
+    <li><strong>Goal:</strong> What successful completion looked like</li>
+    <li><strong>Constraints:</strong> Subnets, security, limited devices, etc.</li>
   </ul>
 </section>
 
 <section>
   <h2>What I Built</h2>
   <ul>
-    <li>Bullet list of components (routers/switches/hosts/services)</li>
-    <li>Subnets used (just list them)</li>
-    <li>Key configs (high level)</li>
+    <li>Key components used (routers, switches, hosts, services)</li>
+    <li>High-level network or system design</li>
+    <li>Important configuration concepts (no step-by-step commands)</li>
   </ul>
 </section>
 
 <section>
   <h2>Evidence</h2>
-  <p>Screenshot or short demo video showing proof of the build.</p>
 
-  <!-- IMAGE EXAMPLE -->
-  <img src="../assets/images/packet-tracer/your-image.png"
-       alt="Lab evidence screenshot"
-       width="750">
+  <p>
+    Screenshot or short demo video showing proof of the completed lab.
+  </p>
 
-  <p><em>Figure 1: Short caption describing what the screenshot shows.</em></p>
+  <figure class="evidence-figure">
+    <img
+      src="../assets/images/packet-tracer/your-image.png"
+      alt="Lab evidence screenshot"
+      class="zoomable"
+    />
+    <figcaption>
+      Figure 1: Brief description of what the image demonstrates.
+      <strong>(Click image to zoom)</strong>
+    </figcaption>
+  </figure>
 
-  <!-- OPTIONAL VIDEO EMBED (YouTube Unlisted) -->
-  <!--
-  <div style="margin-top:15px;">
-    <iframe width="750" height="422"
-      src="https://www.youtube.com/embed/VIDEO_ID"
-      title="Lab Demo Video"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+  <!-- Lightbox (hidden until image is clicked) -->
+  <div class="lightbox" id="lightbox">
+    <img id="lightboxImg" alt="Zoomed lab evidence image">
+    <div class="hint">Click anywhere (or press Esc) to close</div>
   </div>
-  -->
+
 </section>
 
 <section>
   <h2>Testing and Verification</h2>
   <ul>
-    <li>What you tested (ping, traceroute, interface status, service access)</li>
-    <li>What “passed” looked like</li>
-    <li>What you checked when it failed</li>
+    <li>What was tested (ping, access, services, login, etc.)</li>
+    <li>What success looked like</li>
+    <li>What was checked when things failed</li>
   </ul>
 </section>
 
 <section>
   <h2>Troubleshooting Notes</h2>
   <ul>
-    <li>Problem: (1 line)</li>
-    <li>Checks performed: (1–3 bullets)</li>
-    <li>Fix: (1 line)</li>
+    <li><strong>Issue:</strong> Short description of the problem</li>
+    <li><strong>Checks:</strong> What you verified</li>
+    <li><strong>Resolution:</strong> How it was fixed</li>
   </ul>
 </section>
 
 <section>
   <h2>Skills Demonstrated</h2>
   <ul>
-    <li>Skill 1 (example: IPv4 addressing / subnetting)</li>
-    <li>Skill 2 (example: Linux permissions / systemd)</li>
-    <li>Skill 3 (example: SSH hardening / troubleshooting)</li>
+    <li>Skill 1 (e.g., IPv4 addressing, subnetting)</li>
+    <li>Skill 2 (e.g., Linux permissions, systemd)</li>
+    <li>Skill 3 (e.g., troubleshooting methodology)</li>
   </ul>
 </section>
 
 <section>
   <h2>What I Learned</h2>
   <ul>
-    <li>Lesson learned #1</li>
-    <li>Lesson learned #2</li>
-    <li>What you’d improve next time</li>
+    <li>Key technical takeaway</li>
+    <li>Process or troubleshooting insight</li>
+    <li>What you would do differently next time</li>
   </ul>
 </section>
 
 <section>
   <h2>Next Improvement</h2>
   <p>
-    One concrete improvement you plan to add (VLANs, routing, firewall rules, automation, etc.)
+    One concrete improvement for a future iteration (VLANs, routing, security, automation, etc.).
   </p>
 </section>
 
@@ -122,6 +128,33 @@
 <footer>
   <p>© 2026 Raphael Arakpogun</p>
 </footer>
+
+<!-- =========================
+     Lightbox JavaScript
+========================= -->
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+
+  document.querySelectorAll("img.zoomable").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("open");
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("open");
+    lightboxImg.src = "";
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      lightbox.classList.remove("open");
+      lightboxImg.src = "";
+    }
+  });
+</script>
 
 </body>
 </html>
