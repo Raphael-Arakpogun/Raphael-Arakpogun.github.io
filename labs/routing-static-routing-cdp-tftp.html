@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Routing Lab: Static Routing & Services | Raphael Arakpogun</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>Routing Lab: Static Routing & Network Services</h1>
+  <p class="tagline">Cisco Packet Tracer | Routing Fundamentals</p>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../labs.html">Lab Log</a>
+    <a href="../projects.html">Projects</a>
+  </nav>
+</header>
+
+<main>
+
+<section>
+  <h2>Lab Overview</h2>
+  <p>
+    This lab demonstrates my ability to configure and verify static routing
+    across multiple network devices using Cisco Packet Tracer. The focus was
+    on IPv4 subnetting, routing logic, neighbor discovery, and validating
+    connectivity between local and remote networks.
+  </p>
+
+  <p><em>
+    Note: This summary reflects my personal learning and does not include
+    assignment instructions or assessment materials.
+  </em></p>
+</section>
+
+<section>
+  <h2>Scenario</h2>
+  <ul>
+    <li><strong>Environment:</strong> Cisco Packet Tracer</li>
+    <li><strong>Devices:</strong> Routers, Layer 3 switch, PCs, and servers</li>
+    <li><strong>Goal:</strong> Achieve full end-to-end connectivity using static routes</li>
+    <li><strong>Constraints:</strong> Multiple IPv4 subnets and no default routes</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What I Built</h2>
+  <ul>
+    <li>Multiple routed networks connected through routers and a Layer 3 switch</li>
+    <li>Point-to-point WAN links using /30 subnets</li>
+    <li>Remote service network hosting DNS, TFTP, and Web servers</li>
+    <li>Static routes configured on all routing devices</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Skills Demonstrated</h2>
+  <ul>
+    <li>IPv4 addressing and subnetting</li>
+    <li>Static routing configuration</li>
+    <li>Layer 2 vs Layer 3 switch behavior</li>
+    <li>CDP neighbor discovery</li>
+    <li>Connectivity verification using ping and traceroute</li>
+    <li>Saving device configurations to a TFTP server</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Testing and Verification</h2>
+  <ul>
+    <li>Verified connectivity between all directly connected devices</li>
+    <li>Confirmed routing paths using traceroute</li>
+    <li>Validated access to remote network services</li>
+    <li>Confirmed successful configuration uploads to the TFTP server</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Troubleshooting Notes</h2>
+  <ul>
+    <li>
+      <strong>Issue:</strong> Unable to assign IP address to a switch interface
+    </li>
+    <li>
+      <strong>Cause:</strong> Interface was operating as a Layer 2 port
+    </li>
+    <li>
+      <strong>Resolution:</strong> Converted the interface to a Layer 3 port
+      before assigning an IP address
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Evidence</h2>
+
+  <p>
+    The screenshot below shows the completed routed topology and service network.
+  </p>
+
+  <figure class="evidence-figure">
+    <img
+      src="../assets/images/packet-tracer/week3-routing-topology.png"
+      alt="Routing topology with multiple routers, subnets, and remote services"
+      class="zoomable"
+    />
+    <figcaption>
+      Figure 2: Static routing topology with WAN links and remote service network.
+      <strong>(Click image to zoom)</strong>
+    </figcaption>
+  </figure>
+
+</section>
+
+<section>
+  <h2>What I Learned</h2>
+  <ul>
+    <li>Why Ethernet networks require next-hop addresses for static routes</li>
+    <li>The importance of understanding Layer 2 vs Layer 3 switch behavior</li>
+    <li>How routing errors propagate across multiple devices</li>
+    <li>How to systematically verify and troubleshoot routing issues</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next Improvement</h2>
+  <p>
+    A future improvement would be implementing dynamic routing (such as OSPF)
+    to reduce manual configuration and improve scalability.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Raphael Arakpogun</p>
+</footer>
+
+</body>
+</html>
