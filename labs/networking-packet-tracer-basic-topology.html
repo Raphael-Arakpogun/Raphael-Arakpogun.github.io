@@ -28,14 +28,14 @@
 <section>
   <h2>Lab Overview</h2>
   <p>
-    This lab demonstrates my ability to design and test a basic routed network topology
-    using Cisco Packet Tracer. The focus of this lab was on IPv4 addressing, subnetting,
-    device connectivity, and verifying communication between local and remote networks.
+    This lab demonstrates my ability to design and test a basic routed network
+    topology using Cisco Packet Tracer. The focus was on IPv4 addressing,
+    subnetting, and verifying connectivity between multiple networks.
   </p>
 
   <p><em>
-    Note: This summary reflects my own learning and does not include assignment instructions
-    or assessment materials.
+    Note: This summary reflects my own learning and does not include assignment
+    instructions or assessment materials.
   </em></p>
 </section>
 
@@ -43,8 +43,8 @@
   <h2>Scenario</h2>
   <ul>
     <li><strong>Environment:</strong> Cisco Packet Tracer</li>
-    <li><strong>Goal:</strong> Build a multi-network topology and verify end-to-end connectivity.</li>
-    <li><strong>Constraints:</strong> Multiple IPv4 subnets, WAN /30 links, and remote services.</li>
+    <li><strong>Goal:</strong> Build a multi-network topology and verify end-to-end connectivity</li>
+    <li><strong>Constraints:</strong> Multiple IPv4 subnets, WAN /30 links, and remote services</li>
   </ul>
 </section>
 
@@ -54,7 +54,7 @@
     <li>Two local LANs connected through routers (RA and RB)</li>
     <li>Point-to-point WAN link using a /30 subnet</li>
     <li>Remote network containing DNS, TFTP, and Web servers</li>
-    <li>Proper IPv4 addressing based on subnet requirements</li>
+    <li>Structured IPv4 addressing based on subnet requirements</li>
   </ul>
 </section>
 
@@ -73,6 +73,62 @@
   <h2>Testing and Verification</h2>
   <ul>
     <li>Ping tests between devices on different subnets</li>
-    <li>Verification of correct IP address and subnet mask assignment</li>
-    <li>Checked physical and logical connections in Packet Tracer</li>
-    <li>Confirmed successful communication with re
+    <li>Verification of IP address and subnet mask configuration</li>
+    <li>Checked physical and logical links in Packet Tracer</li>
+    <li>Confirmed successful access to remote services</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Evidence</h2>
+
+  <p>
+    Below is a screenshot of the network topology created in Cisco Packet Tracer.
+  </p>
+
+  <figure class="evidence-figure">
+    <img
+      src="../assets/images/packet-tracer/basic-topology.png"
+      alt="Cisco Packet Tracer topology showing LANs, routers, WAN link, and remote services"
+      class="zoomable"
+    />
+    <figcaption>
+      Figure 1: Packet Tracer network topology with local LANs, WAN link, and remote services.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Troubleshooting Notes</h2>
+  <ul>
+    <li><strong>Issue:</strong> Initial ping failure between subnets</li>
+    <li><strong>Checks:</strong> Verified IP addressing and interface status</li>
+    <li><strong>Fix:</strong> Corrected subnet mask on router interface</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What I Learned</h2>
+  <ul>
+    <li>How subnet size impacts address planning</li>
+    <li>The importance of verifying each network hop</li>
+    <li>How small configuration errors affect connectivity</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next Improvement</h2>
+  <p>
+    Extend this topology by adding VLANs and dynamic routing (OSPF) to improve
+    scalability and redundancy.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Raphael Arakpogun</p>
+</footer>
+
+</body>
+</html>
