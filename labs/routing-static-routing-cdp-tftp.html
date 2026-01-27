@@ -3,142 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Routing Lab: Static Routing & Services | Raphael Arakpogun</title>
+  <title>Lab 2: Static Routing, CDP & TFTP | Raphael Arakpogun</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
 
 <header>
-  <h1>Routing Lab: Static Routing & Network Services</h1>
+  <h1>Lab 2: Static Routing, CDP & TFTP</h1>
   <p class="tagline">Cisco Packet Tracer | Routing Fundamentals</p>
 
   <nav>
     <a href="../index.html">Home</a>
-    <a href="../labs.html">Lab Log</a>
+    <a href="../about.html">About</a>
+    <a href="../skills.html">Skills</a>
     <a href="../projects.html">Projects</a>
+    <a href="../labs.html">Lab Log</a>
+    <a href="../contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
 
-<section>
-  <h2>Lab Overview</h2>
-  <p>
-    This lab demonstrates my ability to configure and verify static routing
-    across multiple network devices using Cisco Packet Tracer. The focus was
-    on IPv4 subnetting, routing logic, neighbor discovery, and validating
-    connectivity between local and remote networks.
-  </p>
+  <section>
+    <h2>Lab Overview</h2>
+    <p>
+      This lab demonstrates my ability to configure and verify static routing across multiple devices in Cisco Packet Tracer.
+      I also reviewed CDP neighbor discovery and practiced backing up device configurations to a TFTP server.
+    </p>
 
-  <p><em>
-    Note: This summary reflects my personal learning and does not include
-    assignment instructions or assessment materials.
-  </em></p>
-</section>
+    <p><em>
+      Note: This page reflects my own learning and does not include assignment instructions, answer keys, or assessment materials.
+    </em></p>
+  </section>
 
-<section>
-  <h2>Scenario</h2>
-  <ul>
-    <li><strong>Environment:</strong> Cisco Packet Tracer</li>
-    <li><strong>Devices:</strong> Routers, Layer 3 switch, PCs, and servers</li>
-    <li><strong>Goal:</strong> Achieve full end-to-end connectivity using static routes</li>
-    <li><strong>Constraints:</strong> Multiple IPv4 subnets and no default routes</li>
-  </ul>
-</section>
+  <section>
+    <h2>Scenario</h2>
+    <ul>
+      <li><strong>Environment:</strong> Cisco Packet Tracer</li>
+      <li><strong>Goal:</strong> Achieve full end-to-end connectivity across multiple routed networks and confirm service reachability.</li>
+      <li><strong>Key Topics:</strong> Static routing, CDP verification, and TFTP configuration backup.</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>What I Built</h2>
-  <ul>
-    <li>Multiple routed networks connected through routers and a Layer 3 switch</li>
-    <li>Point-to-point WAN links using /30 subnets</li>
-    <li>Remote service network hosting DNS, TFTP, and Web servers</li>
-    <li>Static routes configured on all routing devices</li>
-  </ul>
-</section>
+  <section>
+    <h2>What I Built / Configured</h2>
+    <ul>
+      <li>Configured interfaces (Layer 3 addressing where required)</li>
+      <li>Verified directly connected connectivity before routing changes</li>
+      <li>Created static routes to reach multiple remote networks</li>
+      <li>Used CDP to confirm neighbor relationships and correct physical connections</li>
+      <li>Copied running configurations to a TFTP server for backup</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Skills Demonstrated</h2>
-  <ul>
-    <li>IPv4 addressing and subnetting</li>
-    <li>Static routing configuration</li>
-    <li>Layer 2 vs Layer 3 switch behavior</li>
-    <li>CDP neighbor discovery</li>
-    <li>Connectivity verification using ping and traceroute</li>
-    <li>Saving device configurations to a TFTP server</li>
-  </ul>
-</section>
+  <section>
+    <h2>Evidence</h2>
 
-<section>
-  <h2>Testing and Verification</h2>
-  <ul>
-    <li>Verified connectivity between all directly connected devices</li>
-    <li>Confirmed routing paths using traceroute</li>
-    <li>Validated access to remote network services</li>
-    <li>Confirmed successful configuration uploads to the TFTP server</li>
-  </ul>
-</section>
+    <p>
+      Below is a screenshot of the Packet Tracer topology used for static routing, CDP neighbor checks, and TFTP backups.
+    </p>
 
-<section>
-  <h2>Troubleshooting Notes</h2>
-  <ul>
-    <li>
-      <strong>Issue:</strong> Unable to assign IP address to a switch interface
-    </li>
-    <li>
-      <strong>Cause:</strong> Interface was operating as a Layer 2 port
-    </li>
-    <li>
-      <strong>Resolution:</strong> Converted the interface to a Layer 3 port
-      before assigning an IP address
-    </li>
-  </ul>
-</section>
+    <figure class="evidence-figure">
+      <img src="../assets/images/packet-tracer/week3-routing-prelab-topology.png">
 
-<section>
-  <h2>Evidence</h2>
+        alt="Packet Tracer topology showing routers, a Layer 3 switch, end devices, and remote services including DNS, TFTP, and WWW"
+        class="zoomable"
+      />
+      <figcaption>
+        Figure 1: Static routing topology with remote services (DNS/TFTP/WWW) and multiple routed networks.
+        <strong>(Click image to zoom)</strong>
+      </figcaption>
+    </figure>
 
-  <p>
-    The screenshot below shows the completed routed topology and service network.
-  </p>
+    <!-- Lightbox (hidden until image is clicked) -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <img id="lightboxImg" alt="Zoomed lab evidence image">
+      <div class="hint">Click anywhere (or press Esc) to close</div>
+    </div>
 
-  <figure class="evidence-figure">
-    <img
-      src="../assets/images/packet-tracer/week3-routing-topology.png"
-      alt="Routing topology with multiple routers, subnets, and remote services"
-      class="zoomable"
-    />
-    <figcaption>
-      Figure 2: Static routing topology with WAN links and remote service network.
-      <strong>(Click image to zoom)</strong>
-    </figcaption>
-  </figure>
+  </section>
 
-</section>
+  <section>
+    <h2>Testing and Verification</h2>
+    <ul>
+      <li><strong>Interface status:</strong> Confirmed key links were up and correctly addressed.</li>
+      <li><strong>Ping testing:</strong> Verified pings between directly connected devices first, then across routed networks.</li>
+      <li><strong>Path checks:</strong> Used traceroute to confirm traffic followed the expected route.</li>
+      <li><strong>Service checks:</strong> Confirmed reachability to remote servers (example: TFTP server ping success).</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>What I Learned</h2>
-  <ul>
-    <li>Why Ethernet networks require next-hop addresses for static routes</li>
-    <li>The importance of understanding Layer 2 vs Layer 3 switch behavior</li>
-    <li>How routing errors propagate across multiple devices</li>
-    <li>How to systematically verify and troubleshoot routing issues</li>
-  </ul>
-</section>
+  <section>
+    <h2>Troubleshooting Notes</h2>
+    <ul>
+      <li><strong>Issue:</strong> A connectivity test failed after initial routing configuration.</li>
+      <li><strong>Checks performed:</strong>
+        <ul>
+          <li>Re-checked IP address and subnet mask correctness</li>
+          <li>Verified next-hop addresses for static routes</li>
+          <li>Confirmed interfaces were not shutdown</li>
+          <li>Used CDP to verify neighbor connections were correct</li>
+        </ul>
+      </li>
+      <li><strong>Fix:</strong> Corrected the addressing/routing mismatch and re-tested until end-to-end pings succeeded.</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Next Improvement</h2>
-  <p>
-    A future improvement would be implementing dynamic routing (such as OSPF)
-    to reduce manual configuration and improve scalability.
-  </p>
-</section>
+  <section>
+    <h2>Skills Demonstrated</h2>
+    <ul>
+      <li>Static routing (next-hop routing)</li>
+      <li>Subnet awareness and IP planning</li>
+      <li>CDP neighbor discovery and validation</li>
+      <li>Connectivity testing (ping/traceroute)</li>
+      <li>Configuration backup to a TFTP server</li>
+      <li>Structured troubleshooting workflow</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What I Learned</h2>
+    <ul>
+      <li>Why static routes must use the correct next-hop (especially on Ethernet networks)</li>
+      <li>How CDP helps confirm device-to-device connections quickly</li>
+      <li>How to confirm routing success using traceroute, not only ping</li>
+      <li>The value of backing up configs to TFTP after successful verification</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Next Improvement</h2>
+    <p>
+      Next, I plan to extend this design by adding VLANs and inter-VLAN routing, then validating access rules (ACLs) between networks.
+    </p>
+  </section>
 
 </main>
 
 <footer>
   <p>© 2026 Raphael Arakpogun</p>
 </footer>
+
+<!-- Lightbox Script -->
+<script src="../assets/js/lightbox.js"></script>
 
 </body>
 </html>
